@@ -53,7 +53,7 @@ it('No args', async () => {
 
 it('Args', async () => {
   await t(
-    '--a b -c d \'  a  bbb cc \' "  de f " --e',
+    '--a b -c d "  a  bbb cc " "  de f " --e',
     `> daizong "test-printArgs" "--a" "b" "-c" "d" "  a  bbb cc " "  de f " "--e"
 
 >> #test-printArgs
