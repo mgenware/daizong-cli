@@ -1,6 +1,6 @@
 {
   "name": "daizong-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run daizong scripts without typing 'npm run r'",
   "type": "module",
   "exports": "./dist/main.js",
