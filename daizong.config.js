@@ -26,7 +26,7 @@ export default {
 
   // Used in tests.
   test: {
-    printArgs: 'node ./dist_tests/printArgs.js',
+    args: 'node ./dist_tests/printArgs.js',
   },
 
   _: {

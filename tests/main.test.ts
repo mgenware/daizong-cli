@@ -14,15 +14,14 @@ function checkStrings(a: string[], b: string[]) {
 
 async function t(args: string, expected: string, hasError?: boolean): Promise<void> {
   try {
-    let cmd = 'node "./dist/main.js" test-printArgs';
+    let cmd = 'node "./dist/main.js" test-args';
     if (args) {
       cmd += ` ${args}`;
     }
     const output = await execAsync(cmd);
     const outputString = output.stdout;
     // Split output into lines to avoid newline difference among different platforms.
-    // Skip the 2 lines (which are an empty line followed by `daizong-cli@<version> r`).
-    const actualLines = splitString(outputString).slice(2);
+    const actualLines = splitString(outputString);
     checkStrings(actualLines, splitString(expected));
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (err: any) {
@@ -42,9 +41,7 @@ async function t(args: string, expected: string, hasError?: boolean): Promise<vo
 it('No args', async () => {
   await t(
     '',
-    `> daizong "test-printArgs"
-
->> #test-printArgs
+    `>> #test-args
 >> node ./dist_tests/printArgs.js
 []
 `,
@@ -54,9 +51,7 @@ it('No args', async () => {
 it('Args', async () => {
   await t(
     '--a b -c d "  a  bbb cc " "  de f " --e',
-    `> daizong "test-printArgs" "--a" "b" "-c" "d" "  a  bbb cc " "  de f " "--e"
-
->> #test-printArgs
+    `>> #test-args
 >> node ./dist_tests/printArgs.js --a b -c d "  a  bbb cc " "  de f " --e
 [ '--a', 'b', '-c', 'd', '  a  bbb cc ', '  de f ', '--e' ]
 `,

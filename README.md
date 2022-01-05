@@ -14,4 +14,4 @@ npm i -g daizong-cli
 
 ## Usage
 
-After installing this package, instead of `npm run r <script>`, you can simply do `dz <script>` to run daizong scripts.
+After installing this package, instead of `npx daizong <script>`, you can simply do `dz <script>` to run daizong scripts.

@@ -14,8 +14,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "r": "daizong",
-    "test": "daizong build"
+    "test": "npx daizong build"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -43,8 +42,5 @@
     "mocha": "^9.1.3",
     "source-map-support": "^0.5.21",
     "typescript": "^4.5.4"
-  },
-  "dependencies": {
-    "detect-installed": "^2.0.4"
   }
 }
