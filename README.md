@@ -8,7 +8,7 @@ Install [daizong](https://github.com/mgenware/daizong) globally instead.
 [![npm version](https://img.shields.io/npm/v/daizong-cli.svg?style=flat-square)](https://npmjs.com/package/daizong-cli)
 [![Node.js Version](http://img.shields.io/node/v/daizong-cli.svg?style=flat-square)](https://nodejs.org/en/)
 
-Run daizong scripts without typing 'npm run r'.
+Run [daizong](https://github.com/mgenware/daizong) scripts in a shorter way.
 
 ## Installation
 
@@ -18,4 +18,4 @@ npm i -g daizong-cli
 
 ## Usage
 
-After installing this package, instead of `npx daizong <script>`, you can simply do `dz <script>` to run daizong scripts.
+Instead of `npx daizong <script>`, you can simply do `dz <script>` to run daizong scripts.

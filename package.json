@@ -1,7 +1,7 @@
 {
   "name": "daizong-cli",
-  "version": "0.2.0",
-  "description": "Run daizong scripts without typing 'npm run r'",
+  "version": "0.2.1",
+  "description": "Run daizong scripts in a shorter way",
   "type": "module",
   "exports": "./dist/main.js",
   "types": "./dist/main.d.ts",
@@ -17,7 +17,7 @@
     "test": "npx daizong build"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "files": [
     "dist/**/*.js",

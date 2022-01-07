@@ -15,7 +15,6 @@ jobs:
           - ubuntu-latest
           - windows-latest
         node_version:
-          - 14
           - 16
         architecture:
           - x64
