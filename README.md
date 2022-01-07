@@ -1,3 +1,7 @@
+# Deprecated
+
+Install [daizong](https://github.com/mgenware/daizong) globally instead.
+
 # daizong-cli
 
 [![Build Status](https://github.com/mgenware/daizong-cli/workflows/Build/badge.svg)](https://github.com/mgenware/daizong-cli/actions)
